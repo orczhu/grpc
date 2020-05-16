@@ -20,7 +20,7 @@ public class GreetingServer {
             server.shutdown();
             System.out.println("Successfully stop the server");
         }));
-        
+
         server.awaitTermination();
     }
 }
