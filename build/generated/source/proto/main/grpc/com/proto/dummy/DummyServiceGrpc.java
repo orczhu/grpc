@@ -18,7 +18,7 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.29.0)",
+    value = "by gRPC proto compiler (version 1.24.0)",
     comments = "Source: dummy/dummy.proto")
 public final class DummyServiceGrpc {
 
@@ -31,14 +31,7 @@ public final class DummyServiceGrpc {
    * Creates a new async stub that supports all call types for the service
    */
   public static DummyServiceStub newStub(io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<DummyServiceStub> factory =
-      new io.grpc.stub.AbstractStub.StubFactory<DummyServiceStub>() {
-        @java.lang.Override
-        public DummyServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-          return new DummyServiceStub(channel, callOptions);
-        }
-      };
-    return DummyServiceStub.newStub(factory, channel);
+    return new DummyServiceStub(channel);
   }
 
   /**
@@ -46,14 +39,7 @@ public final class DummyServiceGrpc {
    */
   public static DummyServiceBlockingStub newBlockingStub(
       io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<DummyServiceBlockingStub> factory =
-      new io.grpc.stub.AbstractStub.StubFactory<DummyServiceBlockingStub>() {
-        @java.lang.Override
-        public DummyServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-          return new DummyServiceBlockingStub(channel, callOptions);
-        }
-      };
-    return DummyServiceBlockingStub.newStub(factory, channel);
+    return new DummyServiceBlockingStub(channel);
   }
 
   /**
@@ -61,14 +47,7 @@ public final class DummyServiceGrpc {
    */
   public static DummyServiceFutureStub newFutureStub(
       io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<DummyServiceFutureStub> factory =
-      new io.grpc.stub.AbstractStub.StubFactory<DummyServiceFutureStub>() {
-        @java.lang.Override
-        public DummyServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-          return new DummyServiceFutureStub(channel, callOptions);
-        }
-      };
-    return DummyServiceFutureStub.newStub(factory, channel);
+    return new DummyServiceFutureStub(channel);
   }
 
   /**
@@ -83,45 +62,57 @@ public final class DummyServiceGrpc {
 
   /**
    */
-  public static final class DummyServiceStub extends io.grpc.stub.AbstractAsyncStub<DummyServiceStub> {
-    private DummyServiceStub(
-        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+  public static final class DummyServiceStub extends io.grpc.stub.AbstractStub<DummyServiceStub> {
+    private DummyServiceStub(io.grpc.Channel channel) {
+      super(channel);
+    }
+
+    private DummyServiceStub(io.grpc.Channel channel,
+        io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected DummyServiceStub build(
-        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+    protected DummyServiceStub build(io.grpc.Channel channel,
+        io.grpc.CallOptions callOptions) {
       return new DummyServiceStub(channel, callOptions);
     }
   }
 
   /**
    */
-  public static final class DummyServiceBlockingStub extends io.grpc.stub.AbstractBlockingStub<DummyServiceBlockingStub> {
-    private DummyServiceBlockingStub(
-        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+  public static final class DummyServiceBlockingStub extends io.grpc.stub.AbstractStub<DummyServiceBlockingStub> {
+    private DummyServiceBlockingStub(io.grpc.Channel channel) {
+      super(channel);
+    }
+
+    private DummyServiceBlockingStub(io.grpc.Channel channel,
+        io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected DummyServiceBlockingStub build(
-        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+    protected DummyServiceBlockingStub build(io.grpc.Channel channel,
+        io.grpc.CallOptions callOptions) {
       return new DummyServiceBlockingStub(channel, callOptions);
     }
   }
 
   /**
    */
-  public static final class DummyServiceFutureStub extends io.grpc.stub.AbstractFutureStub<DummyServiceFutureStub> {
-    private DummyServiceFutureStub(
-        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+  public static final class DummyServiceFutureStub extends io.grpc.stub.AbstractStub<DummyServiceFutureStub> {
+    private DummyServiceFutureStub(io.grpc.Channel channel) {
+      super(channel);
+    }
+
+    private DummyServiceFutureStub(io.grpc.Channel channel,
+        io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected DummyServiceFutureStub build(
-        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+    protected DummyServiceFutureStub build(io.grpc.Channel channel,
+        io.grpc.CallOptions callOptions) {
       return new DummyServiceFutureStub(channel, callOptions);
     }
   }
